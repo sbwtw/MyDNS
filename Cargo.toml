@@ -1,0 +1,9 @@
+[package]
+name = "mydns"
+version = "0.1.0"
+authors = ["石博文 <sbw@sbw.so>"]
+
+[dependencies]
+trust-dns = "*"
+trust-dns-server = "*"
+trust-dns-resolver = "*"
