@@ -14,6 +14,7 @@ fn main() {
     let handler = MyDNSHandler::new();
 
     let mut server = ServerFuture::new(handler).unwrap();
-    server.register_socket(UdpSocket::bind("127.0.0.1:4555").unwrap());
+    // server.register_socket(UdpSocket::bind("127.0.0.1:4555").unwrap());
+    server.register_socket(UdpSocket::bind("127.0.0.1:53").unwrap());
     server.listen().unwrap();
 }
